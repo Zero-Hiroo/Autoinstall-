@@ -52,29 +52,6 @@ install_jq() {
   sleep 1
   clear
 }
-#Check user token
-check_token() {
-  echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY RAFATHAR CODE            [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-  echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
-  read -r USER_TOKEN
-
-  if [ "$USER_TOKEN" = "zero" ]; then
-    echo -e "${GREEN}AKSES BERHASIL${NC}}"
-  else
-    echo -e "${GREEN}Token Salah! Beli Kode Token Di zerodev${NC}"
-    echo -e "${YELLOW}TELEGRAM : @ext4you${NC}"
-    echo -e "${YELLOW}WHATSAPP : +6281997715124${NC}"
-    echo -e "${YELLOW}HARGA TOKEN : 15K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
-    echo -e "${YELLOW}© ZERO-DEV${NC}"
-    exit 1
-  fi
-  clear
-}
-
 # Install theme
 install_theme() {
   while true; do
